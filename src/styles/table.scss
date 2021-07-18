@@ -1,0 +1,82 @@
+@import "../constants/Colors.scss";
+@import "../constants/Sizes.scss";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: helvetica;
+}
+
+html,
+body {
+  max-width: var(--vw100-val);
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+  width: fit-content;
+  max-width: var(--per100-val);
+  box-shadow: var(--table-boxShadow-val);
+  border-radius: var(--pix5-val);
+}
+
+td,
+th {
+  border: var(--th-border);
+  padding: var(--rem05-val);
+  font-size: var(--pix15-val);
+}
+
+th {
+  text-align: left;
+  background-color: var(--th-backgroundColor);
+  color: var(--color-white);
+  text-transform: capitalize;
+  padding-top: var(--rem1-val);
+  padding-bottom: var(--rem1-val);
+  border-bottom: var(--th-borderButtom);
+  border-top: none;
+}
+
+td {
+  white-space: nowrap;
+  border-bottom: none;
+  color: var(--color-td);
+}
+
+td:first-of-type,
+th:first-of-type {
+  border-left: none;
+}
+
+td:last-of-type,
+th:last-of-type {
+  border-right: none;
+}
+.per-section {
+  border-radius: var(--pix5-val);
+  background-color: var(--color-percentage);
+  padding: var(--pix10-val);
+  color: var(--color-white);
+  font-size: small;
+}
+.tr-data {
+  background-color: var(--tr-backgroundColor);
+}
+.tr-data td {
+  color: var(--color-white);
+}
+.img-section {
+  margin: var(--pix10-val);
+}
+
+.symbol-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
